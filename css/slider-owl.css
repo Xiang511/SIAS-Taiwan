@@ -1,0 +1,133 @@
+.Activities{
+    background: rgb(211, 250, 246);
+    padding: 2em;
+}
+
+.xiang-content {
+    margin-top: .5em;
+    background: #fff;
+}
+
+.xiang-content .xiang-txt {
+    margin-left: 2em;
+    padding: 10px;
+    width: 85%;
+}
+
+.xiang-content .xiang-txt h3 {
+    margin-top: .3em;
+    color: rgb(0, 32, 96);
+    font-size: 2em;
+}
+.xiang-content .xiang-txt h4 {
+    margin-top: 1.3em;
+    color: rgb(0, 32, 96);
+}
+.xiang-content .xiang-txt p {
+    margin-top: 2.5em;
+    font-size: 1em;
+}
+
+.xiang-mv {
+    margin-top: 1em;
+    width: 100%;
+    aspect-ratio: 560/315;
+}
+
+.xiang-mv iframe {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+@media screen and (min-width:1024px) {
+    .Activities{
+        background:none;
+    }
+    .xiang-container {
+        display: flex;
+        position: relative;
+        margin-top: 2em;
+    }
+
+    .xiang-container .xiang-item {
+        width: 40%;
+        height: 50vh;
+        background: #fff;
+    }
+
+    .xiang-container .xiang-item:nth-child(2) {
+        width: 60%;
+        background: rgb(211, 250, 246);
+    }
+
+    .xiang-content {
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: none;
+
+    }
+
+    .xiang-mv {
+        width: 100%;
+        aspect-ratio: 560/315;
+    }
+    .xiang-txt {
+        width: 55%;
+    }
+
+    .flex-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .xiang-content .xiang-txt h3 {
+        margin-top: .3em;
+        color: rgb(0, 32, 96);
+        font-size: 3.5em;
+    }
+}
+
+
+/* owl */
+
+
+
+.Activities-carousel .owl-nav button.owl-prev,
+.Activities-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 0;
+    bottom: 40px;
+    width: 40px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.Activities-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+
+.Activities-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+.Activities-carousel .owl-nav:hover span {
+    color: #000
+}
+
+.owl-dots {
+}
+
+.owl-nav span {
+    display: none;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
+}
