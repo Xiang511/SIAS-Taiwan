@@ -20,7 +20,11 @@ h2 {
 h3 {
     font-weight: 400;
 }
-
+@media screen and (max-width:592px){
+    p{
+        text-align: left !important;
+    }
+}
 a {
     color: #000;
     text-decoration: none;
@@ -770,14 +774,14 @@ footer .footer-item {
 }
 
 /* about */
-.about-container{
+.layout2{
     padding: 2em 0 2em 0;
 }
-.about-container h2{
+.layout2 h2{
     font-size: clamp(3em,3vw,6em);
     text-align: center;
 }
-.about-container p{
+.layout2 p{
     text-align: center;
     margin-top: 1em;
     padding: 2em;
@@ -801,23 +805,23 @@ footer .footer-item {
 
 
 @media screen and (min-width:992px){
-         .about-container{
+         .layout2{
             display: flex;
          }
          .about-banner{
             width: 50%;
          }
-         .about-container .txt{
+         .layout2 .txt{
             width: 50%;
             margin: auto;
          }
-         .about-container p{
+         .layout2 p{
             text-align: left;
             padding: 2em 4em 4em 6em;
             font-size: 1.3em;
             line-height: 2em;
          }
-         .about-container:nth-child(even) {
+         .layout2:nth-child(even) {
             flex-direction: row-reverse;
          }
 
