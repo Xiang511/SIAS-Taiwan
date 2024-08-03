@@ -475,6 +475,7 @@ section {
 
 footer {
     background: #F5F5F5;
+    padding-bottom: 2em;
 }
 
 footer a {
@@ -485,7 +486,7 @@ footer .footer-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
 }
 
 .footer-icon {
@@ -493,7 +494,7 @@ footer .footer-item {
     justify-content: space-evenly;
     /* padding: 40px; */
     font-size: 1.4em;
-    min-width: 40px;
+    min-width: 3em;
 }
 
 .footer-icon i {
@@ -518,7 +519,7 @@ footer .footer-item {
 
 .footers {
     display: flex;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
     font-size: .7em;
 }
 
@@ -705,6 +706,7 @@ footer .footer-item {
 
     .footers {
         display: none;
+        padding: 0;
     }
 
     footer .footer-item>.item {
@@ -720,7 +722,7 @@ footer .footer-item {
     }
 
     .copyright {
-        padding: 0 0 20px 40px;
+        padding: 40px 0 20px 40px;
         font-size: .9em;
     }
 
@@ -746,7 +748,7 @@ footer .footer-item {
     }
 
     .copyright {
-        padding: 0 0 20px 40px;
+        padding: 40px 0 20px 40px;
         font-size: 1.1em;
     }
 
@@ -804,9 +806,11 @@ footer .footer-item {
 
 
 
-@media screen and (min-width:992px){
+@media screen and (min-width:1400px){
          .layout2{
             display: flex;
+            width: 80%;
+            margin: auto;
          }
          .about-banner{
             width: 50%;
@@ -815,9 +819,15 @@ footer .footer-item {
             width: 50%;
             margin: auto;
          }
-         .layout2 p{
+         .layout2:first-child p{
             text-align: left;
             padding: 2em 4em 4em 6em;
+            font-size: 1.3em;
+            line-height: 2em;
+         }
+         .layout2 p{
+            text-align: left;
+            padding: 0 0 1em .5em ;
             font-size: 1.3em;
             line-height: 2em;
          }
