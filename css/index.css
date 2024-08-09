@@ -173,13 +173,13 @@ section {
 
     .main-nav a {
         display: block;
-        padding: 15px 15px 10px 30px;
+        padding: 15px 15px 20px 30px;
         text-decoration: none;
         color: #000;
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: 500;
-        margin-top: 0.8em;
-        margin-bottom: 0.8em;
+        margin-top: 2em;
+        margin-bottom: 2em;
         position: relative;
     }
 
@@ -839,5 +839,51 @@ footer .footer-item {
 
 
 
+.activities-layout .slider-pic {
+    scale: 0.9;
+    /* filter: blur(3px); */
+    width: 80%;
+    margin: auto;
+}
+
+.activities-layout .slider-pic img {
+    border-radius: 2.375rem;
+    aspect-ratio: 4/3;
+}
+
+.activities-layout .owl-item.active.center .slider-pic {
+    scale: 1;
+    /* filter: blur(0px); */
+}
 
 
+@media screen and (min-width:992px){
+    .layout2.activities-layout{
+       display: flex;
+       width: 80%;
+       margin: auto;
+    }
+    .about-banner.activities-layout{
+       width: 50%;
+    }
+    .layout2.activities-layout .txt{
+       width: 50%;
+       margin: auto;
+    }
+    .layout2.activities-layout:first-child p{
+       text-align: left;
+       padding: 2em 4em 4em 6em;
+       font-size: 1.3em;
+       line-height: 2em;
+    }
+    .layout2.activities-layout p{
+       text-align: left;
+       padding: 0 0 1em .5em ;
+       font-size: 1.3em;
+       line-height: 2em;
+    }
+    .layout2.activities-layout:nth-child(even) {
+       flex-direction: row-reverse;
+    }
+
+}
