@@ -887,3 +887,82 @@ footer .footer-item {
     }
 
 }
+
+
+
+
+
+
+
+
+#pagination-container{
+    width: 20%;
+    margin: auto;
+}
+
+#list-wrapper{
+    max-width: 80%;
+    margin: 3em auto auto auto;
+    /* min-height: 80vh; */
+}
+#list-wrapper .news{
+    max-width: none;
+    width: 72%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+
+
+@media screen and (max-width:1400px){
+    .list-item p{
+        text-align: left;
+    }
+}
+
+
+.list-item {
+    border-bottom: 3px solid #b1cac7;
+    margin-bottom: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+/* 頁面按鈕 */
+
+.simple-pagination ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom:1em;
+}
+
+.simple-pagination li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.simple-pagination .current {
+    text-decoration: none;
+}
+.simple-pagination .current.prev,.simple-pagination .page-link.prev,.simple-pagination .page-link.next ,.current.next{
+    display: none;
+}
+
+@media (max-width:600px) {
+    .simple-pagination li a {
+        font-size: 18px;
+        padding: 3px 3px 3px 3px;
+    }
+    .simple-pagination .current {
+        font-size: 20px;
+        padding: 3px 3px 3px 3px;
+    }
+}
