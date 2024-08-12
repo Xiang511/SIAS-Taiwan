@@ -8,11 +8,10 @@ for (var i = 0; i < menuBtn.length; i++) {
 
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('.main-header');
-    if (window.scrollY > 50) { // 當捲動超過50px時改變背景顏色
-        nav.classList.add('nav-scrolled');
-        nav.classList.remove('nav-default');
-    } else {
-        nav.classList.add('nav-default');
-        nav.classList.remove('nav-scrolled');
-    }
-});
+    const bg_div = document.querySelector('.bg');
+    const isScrolled = window.scrollY > 50;
+    nav.classList.toggle('nav-scrolled', isScrolled);
+    nav.classList.toggle('nav-default', !isScrolled);
+    bg_div.classList.toggle('bg-scrolled', isScrolled);
+    bg_div.classList.toggle('bg-default', !isScrolled);
+}); 

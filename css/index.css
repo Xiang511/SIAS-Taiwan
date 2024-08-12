@@ -20,11 +20,13 @@ h2 {
 h3 {
     font-weight: 400;
 }
-@media screen and (max-width:592px){
-    p{
+
+@media screen and (max-width:592px) {
+    p {
         text-align: left !important;
     }
 }
+
 a {
     color: #000;
     text-decoration: none;
@@ -178,8 +180,8 @@ section {
         color: #000;
         font-size: 1.5em;
         font-weight: 500;
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
         position: relative;
     }
 
@@ -295,11 +297,12 @@ section {
     z-index: 2;
     position: relative;
 }
-@media screen and (min-width:1200px){
-    .owl-carousel .owl-item img{
+
+@media screen and (min-width:1200px) {
+    .owl-carousel .owl-item img {
         width: 74% !important;
         margin: auto;
-    }   
+    }
 }
 
 /* -----------------------owl-----------------------*/
@@ -323,7 +326,7 @@ section {
 .banner-txt h1 {
     margin-top: 1em;
     font-size: 2.4em;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -342,6 +345,15 @@ section {
     color: #FFF; */
 }
 
+@media screen and (max-width:768px){
+    .banner-txt h1 {
+        margin-top: 1em;
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+    }
+       
+}
 
 @media screen and (min-width:768px) {
     .banner-txt a {
@@ -353,7 +365,7 @@ section {
     .banner-txt h1 {
         margin-top: 1em;
         font-size: 3.6em;
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
     }
 }
@@ -362,8 +374,6 @@ section {
     .banner-txt h1 {
         margin-top: 1em;
         font-size: 2.2em;
-        font-weight: 400;
-        text-align: center;
     }
 
     .banner-txt p {
@@ -475,7 +485,7 @@ section {
 
 footer {
     background: #F5F5F5;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 footer a {
@@ -495,6 +505,7 @@ footer .footer-item {
     /* padding: 40px; */
     font-size: 1.4em;
     min-width: 3em;
+    gap: .5em;
 }
 
 .footer-icon i {
@@ -557,7 +568,7 @@ footer .footer-item {
     font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.1rem;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.3em;
     padding: 1rem 1.6rem;
     text-align: center;
     text-decoration: none #0d172a solid;
@@ -567,6 +578,8 @@ footer .footer-item {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    
+    min-width: fit-content  ;
 }
 
 .button-81:hover {
@@ -692,7 +705,8 @@ footer .footer-item {
     #three {
         order: 3;
     }
-/* footer */
+
+    /* footer */
     footer>div {
         width: 70%;
         max-width: 1250px;
@@ -776,68 +790,100 @@ footer .footer-item {
 }
 
 /* about */
-.layout2{
+.layout2 {
     padding: 2em 0 2em 0;
 }
-.layout2 h2{
-    font-size: clamp(3em,3vw,6em);
-    text-align: center;
+
+.bg{
+    background: #dcfaf6;
 }
-.layout2 p{
+.bg-scrolled{
+    background: #FFF;
+    transition: .3s;
+    scale: 0.9;
+}
+
+.bg-default{
+    background: #dcfaf6;
+    transition: .3s;
+    scale: 1;
+}
+
+
+.layout2 h2 {
+    font-size: clamp(3em, 3vw, 6em);
+    text-align: center;
+    padding: 0.3em;
+}
+
+.layout2 p {
     text-align: center;
     margin-top: 1em;
     padding: 2em;
 }
-.about-banner{
+
+.about-banner {
     margin-top: 2em;
 }
-.layout1.about .title{
-    font-size: clamp(1em,3vw,3em);
+
+.layout1.about .title {
+    font-size: clamp(1em, 3vw, 3em);
     text-align: center;
 }
-.layout1.about .txt p{
+
+.layout1.about .txt p {
     text-align: center;
 }
 
-.contact-icon{
-    padding: 2em 
+.contact-icon {
+    padding: 2em
 }
 
 
 
 
-@media screen and (min-width:1400px){
-         .layout2{
-            display: flex;
-            width: 80%;
-            margin: auto;
-         }
-         .about-banner{
-            width: 50%;
-         }
-         .layout2 .txt{
-            width: 50%;
-            margin: auto;
-         }
-         .layout2:first-child p{
-            text-align: left;
-            padding: 2em 4em 4em 6em;
-            font-size: 1.3em;
-            line-height: 2em;
-         }
-         .layout2 p{
-            text-align: left;
-            padding: 0 0 1em .5em ;
-            font-size: 1.3em;
-            line-height: 2em;
-         }
-         .layout2:nth-child(even) {
-            flex-direction: row-reverse;
-         }
+@media screen and (min-width:1400px) {
+    .layout2 {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-banner {
+        width: 50%;
+    }
+
+    .layout2 .txt {
+        width: 50%;
+        margin: auto;
+    }
+
+    .layout2:first-child p {
+        text-align: left;
+        padding: 2em 4em 4em 6em;
+        font-size: 1.3em;
+        line-height: 2em;
+    }
+
+    .layout2 p {
+        text-align: left;
+        padding: 0 0 1em .5em;
+        font-size: 1.3em;
+        line-height: 2em;
+    }
+
+    .layout2:nth-child(even) {
+        flex-direction: row-reverse;
+    }
 
 }
 
 
+@media screen and (min-width:1400px) {
+    #Furthermore p {
+        margin-left: 6em;
+    }
+}
 
 .activities-layout .slider-pic {
     scale: 0.9;
@@ -857,33 +903,38 @@ footer .footer-item {
 }
 
 
-@media screen and (min-width:992px){
-    .layout2.activities-layout{
-       display: flex;
-       width: 80%;
-       margin: auto;
+@media screen and (min-width:992px) {
+    .layout2.activities-layout {
+        display: flex;
+        width: 80%;
+        margin: auto;
     }
-    .about-banner.activities-layout{
-       width: 50%;
+
+    .about-banner.activities-layout {
+        width: 50%;
     }
-    .layout2.activities-layout .txt{
-       width: 50%;
-       margin: auto;
+
+    .layout2.activities-layout .txt {
+        width: 50%;
+        margin: auto;
     }
-    .layout2.activities-layout:first-child p{
-       text-align: left;
-       padding: 2em 4em 4em 6em;
-       font-size: 1.3em;
-       line-height: 2em;
+
+    .layout2.activities-layout:first-child p {
+        text-align: left;
+        padding: 2em 4em 4em 6em;
+        font-size: 1.3em;
+        line-height: 2em;
     }
-    .layout2.activities-layout p{
-       text-align: left;
-       padding: 0 0 1em .5em ;
-       font-size: 1.3em;
-       line-height: 2em;
+
+    .layout2.activities-layout p {
+        text-align: left;
+        padding: 0 0 1em .5em;
+        font-size: 1.3em;
+        line-height: 2em;
     }
+
     .layout2.activities-layout:nth-child(even) {
-       flex-direction: row-reverse;
+        flex-direction: row-reverse;
     }
 
 }
@@ -895,17 +946,18 @@ footer .footer-item {
 
 
 
-#pagination-container{
-    width: 20%;
+#pagination-container {
+    width: 24%;
     margin: auto;
 }
 
-#list-wrapper{
+#list-wrapper {
     max-width: 80%;
     margin: 3em auto auto auto;
     /* min-height: 80vh; */
 }
-#list-wrapper .news{
+
+#list-wrapper .news {
     max-width: none;
     width: 72%;
     margin: auto;
@@ -914,8 +966,8 @@ footer .footer-item {
 
 
 
-@media screen and (max-width:1400px){
-    .list-item p{
+@media screen and (max-width:1400px) {
+    .list-item p {
         text-align: left;
     }
 }
@@ -941,7 +993,7 @@ footer .footer-item {
     list-style: none;
     text-align: center;
     margin-top: 1em;
-    margin-bottom:1em;
+    margin-bottom: 1em;
 }
 
 .simple-pagination li {
@@ -952,7 +1004,11 @@ footer .footer-item {
 .simple-pagination .current {
     text-decoration: none;
 }
-.simple-pagination .current.prev,.simple-pagination .page-link.prev,.simple-pagination .page-link.next ,.current.next{
+
+.simple-pagination .current.prev,
+.simple-pagination .page-link.prev,
+.simple-pagination .page-link.next,
+.current.next {
     display: none;
 }
 
@@ -961,6 +1017,7 @@ footer .footer-item {
         font-size: 18px;
         padding: 3px 3px 3px 3px;
     }
+
     .simple-pagination .current {
         font-size: 20px;
         padding: 3px 3px 3px 3px;
