@@ -99,7 +99,10 @@ section {
     transition: .5s ease;
     background: #dfb961;
 }
-
+.bx-chevron-right::before{
+    font-size: 1.5em;
+    vertical-align: sub;
+}
 
 
 @media screen and (max-width:992px) {
